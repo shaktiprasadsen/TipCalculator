@@ -48,22 +48,22 @@ public class TipCalculator extends Activity {
     	
     }
 
+    public void btn15pClick(View view) {
+    	EditText enteredAmount = (EditText) findViewById(R.id.etEnteredAmount);
+    	TextView tipAmount = (TextView) findViewById(R.id.tvTipText);
+    	
+       	String str = enteredAmount.getText().toString();
+       	String calcTip = calculateTip(str, 15);
+       	tipAmount.setText(calcTip);
+    	
+    }
+    
     public void btn20pClick(View view) {
     	EditText enteredAmount = (EditText) findViewById(R.id.etEnteredAmount);
     	TextView tipAmount = (TextView) findViewById(R.id.tvTipText);
     	
        	String str = enteredAmount.getText().toString();
        	String calcTip = calculateTip(str, 20);
-       	tipAmount.setText(calcTip);
-    	
-    }
-    
-    public void btn30pClick(View view) {
-    	EditText enteredAmount = (EditText) findViewById(R.id.etEnteredAmount);
-    	TextView tipAmount = (TextView) findViewById(R.id.tvTipText);
-    	
-       	String str = enteredAmount.getText().toString();
-       	String calcTip = calculateTip(str, 30);
        	tipAmount.setText(calcTip);
     	
     }

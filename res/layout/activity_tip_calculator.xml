@@ -29,31 +29,31 @@
         android:text="@string/percent_10" />
 
     <Button
-        android:id="@+id/btn20pTip"
+        android:id="@+id/btn15pTip"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignBaseline="@+id/btn10pTip"
         android:layout_alignBottom="@+id/btn10pTip"
         android:layout_centerHorizontal="true"
-        android:onClick="btn20pClick"
-        android:text="@string/percent_20" />
+        android:onClick="btn15pClick"
+        android:text="@string/percent_15" />
 
     <Button
-        android:id="@+id/button3"
+        android:id="@+id/btn20pTip"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignBaseline="@+id/btn20pTip"
-        android:layout_alignBottom="@+id/btn20pTip"
+        android:layout_alignBaseline="@+id/btn15pTip"
+        android:layout_alignBottom="@+id/btn15pTip"
         android:layout_marginLeft="22dp"
-        android:layout_toRightOf="@+id/btn20pTip"
-        android:onClick="btn30pClick"
-        android:text="@string/percent_30" />
+        android:layout_toRightOf="@+id/btn15pTip"
+        android:onClick="btn20pClick"
+        android:text="@string/percent_20" />
 
     <TextView
         android:id="@+id/tvTipText"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/btn20pTip"
+        android:layout_below="@+id/btn15pTip"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="106dp"
         android:text="" />
