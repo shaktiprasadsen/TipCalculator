@@ -43,8 +43,12 @@ public class TipCalculator extends Activity {
     	TextView tipAmount = (TextView) findViewById(R.id.tvTipText);
     	
        	String str = enteredAmount.getText().toString();
-       	String calcTip = calculateTip(str, 10);
-       	tipAmount.setText(calcTip);
+       	if(str.length() > 0) {
+       		String calcTip = calculateTip(str, 10);
+       		tipAmount.setText(calcTip);
+       	}
+       	else
+       		tipAmount.setText("0.00");
     	
     }
 
@@ -53,8 +57,12 @@ public class TipCalculator extends Activity {
     	TextView tipAmount = (TextView) findViewById(R.id.tvTipText);
     	
        	String str = enteredAmount.getText().toString();
-       	String calcTip = calculateTip(str, 15);
-       	tipAmount.setText(calcTip);
+       	if(str.length() > 0) {
+       		String calcTip = calculateTip(str, 15);
+       		tipAmount.setText(calcTip);
+       	}
+       	else
+       		tipAmount.setText("0.00");
     	
     }
     
@@ -63,9 +71,12 @@ public class TipCalculator extends Activity {
     	TextView tipAmount = (TextView) findViewById(R.id.tvTipText);
     	
        	String str = enteredAmount.getText().toString();
-       	String calcTip = calculateTip(str, 20);
-       	tipAmount.setText(calcTip);
-    	
+       	if(str.length() > 0) {
+       		String calcTip = calculateTip(str, 20);
+       		tipAmount.setText(calcTip);
+       	}
+       	else
+       		tipAmount.setText("0.00");
     }
 	private String calculateTip(String str, int percentage) {
 		double tipAmount = Double.parseDouble(str) * percentage / 100;
